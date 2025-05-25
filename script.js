@@ -35,8 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ["presentations-section", "sections/presentations.html"],
     ["hero-intro", "sections/subSection.html"],
     ["about-section", "sections/about.html"],
-    ["contact-section", "sections/contact.html"],
-    ["footer-section", "sections/footer.html"]
+    ["contact-section", "sections/contact.html"]
   ];
 
   sections.forEach(([id, file]) => {
