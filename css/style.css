@@ -939,7 +939,7 @@ nav.scrolled .hamburg {
 /* ============== OTEHR ============== */
 
 .hero-intro {
-  background: url('assets/images/sub-section.jpg') no-repeat center center/cover;
+  background: url('../assets/images/sub-section.jpg') no-repeat center center/cover;
   height: 60vh;
   position: relative;
   display: flex;
