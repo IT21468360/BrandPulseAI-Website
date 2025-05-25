@@ -1,0 +1,134 @@
+<section class="project-domain">
+  <div class="section">
+    <h2 class="section-title">📘 Project Domain</h2>
+
+    <!-- LITERATURE SURVEY -->
+    <div class="card">
+      <div class="section-header">
+        <h3>🔍 Literature Survey</h3>
+      </div>
+      <p class="justify-text" style="font-size: 15px;">As the banking industry rapidly digitalizes, managing brand reputation through customer feedback analytics has become a strategic imperative. Social media, app stores, and online forums generate large volumes of multilingual, unstructured feedback in Sinhala, English, and Sinhala-English code-mixed formats. This necessitates advanced Natural Language Processing (NLP) techniques across multiple stages, including keyword extraction, aspect classification, sentiment analysis, and explainable AI (XAI).</p>
+      <br>
+      <ol class="justify-text" style="font-size: 15px;">
+        <li><strong>Keyword Extraction:</strong> A.-Dalhani and M. Nair [1] proposed hybrid methods combining TF-IDF, RAKE, and fine-tuned transformers for keyword extraction in multilingual text. However, these methods perform poorly on domain-specific and low-resource languages like Sinhala. BERT-based models such as KeyBERT have demonstrated high precision in identifying domain-specific terms but require adaptation for code-mixed data.</li>
+        <li><strong>Aspect Classification:</strong> Boopathiraj et al. [2] used supervised machine learning models trained on annotated banking reviews to extract aspect-entity pairs. More recent approaches employ BERTweet and XLM-RoBERTa for fine-grained aspect categorization, yet these systems are under-explored in the context of Sri Lankan dialects and code-mixed text.</li>
+        <li><strong>Sentiment Analysis:</strong> Vigshini and Dias [3] explored sentiment classification in bilingual corpora using BiLSTM and attention layers. Sinhala sentiment models have been benchmarked by Weeraprameshwara et al. [4], where XLM-R and mBERT demonstrated promising results on Facebook data. However, none provide sentiment scores or support for fine-grained mixed sentiment.</li>
+        <li><strong>Explainable AI:</strong> Atanasova et al. [5] introduced SHAP and LIME in multilingual NLP for model interpretability. While widely used for English, their application in Sinhala and code-mixed languages remains limited due to morphological complexity and inconsistent transliteration.</li>
+      </ol>
+      <br>
+      <p class="justify-text" style="font-size: 15px;">Despite substantial advancements, no integrated system currently addresses the complete pipeline of multilingual brand sentiment extraction, scoring, and explanation for the financial domain in Sri Lanka.</p>
+      <br>
+      <p class="justify-text" style="font-size: 12px;">
+        <strong>References</strong><br>
+        <i>[1] A.-Dalhani and M. Nair, “Multilingual keyword extraction for low-resource domains,” Unpublished manuscript, 2024.<br>
+        [2] R. Boopathiraj et al., “Aspect classification of banking reviews using BERTweet,” Proc. Int. Conf. Comput. Linguistics, pp. 134–142, 2020.<br>
+        [3] H. Vigshini and D. A. Dias, “Sentiment classification of bilingual reviews using BiLSTM,” IEEE Int. Conf. Adv. ICT, pp. 77–83, 2020.<br>
+        [4] S. Weeraprameshwara et al., “Large-scale sentiment analysis on Sinhala Facebook comments,” IEEE Access, vol. 11, pp. 12345–12357, 2023.<br>
+        [5] P. Atanasova et al., “Interpretable predictions of NLP models,” Proc. ACL 2020, pp. 4858–4869. </i>
+      </p>
+    </div>
+
+
+    <!-- RESEARCH GAP -->
+    <div class="card">
+      <div class="section-header">
+        <h3>🧩 Research Gap</h3>
+      </div>
+      <div class="gap-grid" class="justify-text" style="font-size: 15px;">
+        <div class="gap-item">
+          <img src="assets/images/language.jpg" alt="Language Limitations">
+          <h4>O1 : Language Limitations</h4>
+          <p>Most existing models underperform when analyzing low-resource languages like Sinhala or code-mixed Sinhala-English. This results in low sentiment accuracy for Sri Lankan banking feedback.</p>
+        </div>
+        <div class="gap-item">
+          <img src="assets/images/banking.jpg" alt="Domain-Specific Relevance">
+          <h4>O2 : Domain-Specific Relevance</h4>
+          <p>Most sentiment systems are trained on generic data (e.g., Wikipedia, Amazon). They cannot recognize critical banking-related issues like trust violations, loan rejections, or ATM errors from customer reviews.</p>
+        </div>
+        <div class="gap-item">
+          <img src="assets/images/sentiment.jpg" alt="Sentiment Score Weakness">
+          <h4>O3 : Sentiment Score Weakness</h4>
+          <p>Systems that do predict sentiment (Positive/Negative) often fail to provide scaled confidence scores that reflect the strength or intensity of the opinion, especially across multiple languages.</p>
+        </div>
+        <div class="gap-item">
+          <img src="assets/images/explainability.jpeg" alt="Lack of Transparency">
+          <h4>O4 : Lack of Transparency</h4>
+          <p>Frameworks like SHAP and LIME are rarely customized for Sinhala scripts or Singlish. There’s minimal research into token-level explanations in these languages.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- RESEARCH PROBLEM -->
+    <div class="card">
+      <div class="section-header">
+        <h3>❓ Research Problem</h3>
+      </div>
+      <div class="split research-problem">
+        <div class="research-text">
+          <h5 class="justify-text" style="font-size: 16px;">
+            How can we build a real-time, explainable, and multilingual brand reputation
+            management system to accurately classify and interpret customer sentiments
+            in Sinhala, English, and code-mixed banking reviews?
+          </h5><br>
+          <p class="justify-text" style="font-size: 14px;">
+            Traditional sentiment analysis tools lack the granularity, multilingual adaptability,
+            and domain-awareness needed for financial institutions operating in linguistically
+            diverse markets like Sri Lanka. Most existing systems overlook critical contextual
+            nuances, especially in code-mixed content, and do not provide transparency in
+            sentiment predictions, limiting their effectiveness in decision-making and customer
+            experience enhancement.
+          </p>
+        </div>
+        <div class="research-img">
+          <img src="assets/images/research_problem.jpg" alt="Research Problem" />
+        </div>
+      </div>
+    </div>
+
+
+    <!-- RESEARCH OBJECTIVES -->
+    <div class="card">
+      <div class="section-header">
+        <h3>🎯 Research Objectives</h3>
+      </div>
+      <div class="split">
+        <img src="assets/images/objectives.jpg" alt="Research Objectives">
+        <ul class="justify-text" style="font-size: 15px;">
+          <li>To implement a multilingual web scraping and preprocessing pipeline for extracting Sinhala, English, and code-mixed feedback from banking platforms.</li>
+          <li>To fine-tune a transformer-based keyword extractor that identifies high-impact terms relevant to banking services.</li>
+          <li>To develop an aspect classifier that categorizes comments into key banking domains: Customer Support, Digital Banking, Loans, Transactions, and Security.</li>
+          <li>To design a multilingual sentiment analysis module producing sentiment labels and softmax-calibrated scores.</li>
+          <li>To integrate SHAP and LIME for model interpretability, highlighting influential words in sentiment classification.</li>
+          <li>To deliver all predictions through a unified, user-friendly dashboard for banks and analysts to monitor brand reputation.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- METHODOLOGY -->
+    <div class="card">
+      <div class="section-header">
+        <h3>🧪 Methodology</h3>
+      </div>
+      <img src="assets/images/methodology.png" alt="Methodology Diagram" class="full-img">
+      <p class="justify-text" style="font-size: 15px;">
+        The proposed Multilingual Brand Reputation Management System consists of four integrated components designed to automate the entire pipeline from content extraction to explainable sentiment analysis in Sinhala, English, and code-mixed reviews.
+        <br><br>
+        <b>Component 01</b> begins with user-provided URLs, where web content is scraped using automated tools like Selenium and BeautifulSoup. The extracted text is cleaned, normalized, and passed through a fine-tuned KeyBERT model to identify high-impact banking-related keywords such as “loan issues” or “OTP failed.”
+        <br>
+        <b>Component 02</b> uses these keywords to retrieve additional web content relevant to banking services. The system processes this data by performing language detection, transliteration for Singlish inputs, and segmentation into structured review units suitable for analysis.
+        <br>
+        <b>Component 03</b> classifies each review into one of five banking aspects—Customer Support, Digital Banking, Loans and Credit Services, Transactions and Payments, or Trust and Security. A fine-tuned multilingual sentiment model then predicts sentiment (Positive, Negative, Neutral) and assigns a softmax-based sentiment score for each review.
+        <br>
+        <b>Component 04</b> applies explainability techniques using SHAP for English and LIME for Sinhala/code-mixed content to highlight the words that contributed most to each prediction. Users are then presented with a visual, transparent dashboard displaying sentiment labels, scores, keywords, and model explanations for better decision-making.
+      </p>
+    </div>
+
+    <!-- TECHNOLOGIES USED -->
+    <div class="card">
+      <div class="section-header">
+        <h3>💻 Technologies Used</h3>
+      </div>
+      <img src="assets/images/technologies.png" alt="Technologies Used" class="full-img">
+    </div>
+  </div>
+</section>
